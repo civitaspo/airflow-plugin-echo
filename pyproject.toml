@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "airflow-plugin-echo"
-version = "0.1.0"
+version = "0.0.1"
 description = ""
 authors = ["Civitaspo <civitaspo@gmail.com>"]
 packages = [
