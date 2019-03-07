@@ -3,6 +3,9 @@ name = "airflow-plugin-echo"
 version = "0.1.0"
 description = ""
 authors = ["Civitaspo <civitaspo@gmail.com>"]
+packages = [
+  { include = "airflow" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -14,3 +17,6 @@ pytest = "^3.0"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.poetry.plugins."airflow.plugins"]
+echo = "airflow.plugin.echo:EchoAirflowPlugin"
