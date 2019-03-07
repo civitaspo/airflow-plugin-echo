@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "airflow-plugin-echo"
-version = "0.0.1"
+version = "0.0.6"
 description = "An Airflow Plugin just for executing `echo`. This plugin is created for the practice to develop an Airflow Plugin."
 readme = "README.md"
 include = ["CHANGELOG.md"]
@@ -19,8 +19,8 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.7"
-apache-airflow = "^1.10"
+python = "^3.6"
+apache-airflow = "^1.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
