@@ -6,6 +6,7 @@ authors = ["Civitaspo <civitaspo@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
+apache-airflow = "^1.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
