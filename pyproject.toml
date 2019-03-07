@@ -1,7 +1,11 @@
 [tool.poetry]
 name = "airflow-plugin-echo"
 version = "0.0.1"
-description = ""
+description = "An Airflow Plugin just for executing `echo`. This plugin is created for the practice to develop an Airflow Plugin."
+readme = "README.md"
+include = ["CHANGELOG.md"]
+homepage = "https://github.com/civitaspo/airflow-plugin-echo"
+repository = "https://github.com/civitaspo/airflow-plugin-echo"
 authors = ["Civitaspo <civitaspo@gmail.com>"]
 packages = [
   { include = "airflow", from = "src" },
