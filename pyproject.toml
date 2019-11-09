@@ -1,11 +1,26 @@
 [tool.poetry]
 name = "airflow-plugin-echo"
-version = "0.1.0"
-description = ""
+version = "0.0.6"
+description = "An Airflow Plugin just for executing `echo`. This plugin is created for the practice to develop an Airflow Plugin."
+readme = "README.md"
+include = ["CHANGELOG.md"]
+homepage = "https://github.com/civitaspo/airflow-plugin-echo"
+repository = "https://github.com/civitaspo/airflow-plugin-echo"
 authors = ["Civitaspo <civitaspo@gmail.com>"]
+packages = [
+  { include = "airflow", from = "src" },
+]
+# See. https://pypi.org/pypi?%3Aaction=list_classifiers
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3 :: Only",
+]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
+apache-airflow = "^1.9"
 
 [tool.poetry.dev-dependencies]
 pytest = "^3.0"
@@ -13,3 +28,6 @@ pytest = "^3.0"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.poetry.plugins."airflow.plugins"]
+echo = "airflow.plugin.echo:EchoAirflowPlugin"
